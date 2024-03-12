@@ -69,10 +69,12 @@ fun Timer() {
     Text(
         text = time,
         style = MaterialTheme.typography.displayLarge,
+        color =  Color(0xFFD5DBE0)
     )
     Text(
         text = text,
         style = MaterialTheme.typography.displayLarge,
+        color =  Color(0xFFD5DBE0)
 
     )
 

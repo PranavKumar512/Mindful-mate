@@ -39,7 +39,7 @@ fun ResourcesScreen(navController: NavController) {
         Scaffold(
             topBar = {
                 TopAppBar(
-                    title = { Text(text = "ZenZone", modifier = Modifier.padding(start = 16.dp)) },
+                    title = { Text(text = "Mindful mate", modifier = Modifier.padding(start = 16.dp)) },
                     navigationIcon = {
                         IconButton(onClick = { navController.popBackStack() }) {
                             Icon(

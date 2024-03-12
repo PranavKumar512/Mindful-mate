@@ -58,7 +58,7 @@ fun ActivitiesScreen(navController: NavController) {
         Scaffold(
             topBar = {
                 TopAppBar(
-                    title = { Text(text = "App Name", modifier = Modifier.padding(start = 16.dp)) },
+                    title = { Text(text = "Mindful mate", modifier = Modifier.padding(start = 16.dp)) },
                     navigationIcon = {
                         IconButton(onClick = { navController.popBackStack() }) {
                             Icon(

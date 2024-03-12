@@ -88,7 +88,7 @@ fun LoadingAnimation(
 }
 
 @Composable
-fun ChatTypingAnimation(messages: String, typingSpeed: Long = 50) {
+fun ChatTypingAnimation(messages: String, typingSpeed: Long = 20) {
     var currentCharacterIndex by remember { mutableStateOf(0) }
     var isTyping by remember { mutableStateOf(true) }
 
@@ -107,13 +107,15 @@ fun ChatTypingAnimation(messages: String, typingSpeed: Long = 50) {
         modifier = Modifier
             .padding(16.dp)
             .fillMaxWidth()
-            .wrapContentHeight() // Adjust height to content
+            .wrapContentHeight(),
     ) {
         Text(
             text = typedMessage,
             modifier = Modifier
                 .padding(10.dp)
-                .fillMaxWidth() // Ensure text occupies the full width
+                .fillMaxWidth() ,
+            style = MaterialTheme.typography.titleLarge
+
         )
         CursorBlinking()
     }
