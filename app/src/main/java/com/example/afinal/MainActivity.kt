@@ -26,6 +26,7 @@ import androidx.compose.material.icons.automirrored.filled.DirectionsRun
 import androidx.compose.material.icons.automirrored.filled.LibraryBooks
 import androidx.compose.material.icons.automirrored.filled.Send
 import androidx.compose.material.icons.filled.CommentBank
+import androidx.compose.material.icons.filled.SelfImprovement
 import androidx.compose.material3.BottomAppBar
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
@@ -94,10 +95,10 @@ fun UiWindow(
 ) {
 
     Scaffold(
-    containerColor = Color.Black,
+
         topBar = {
             TopAppBar(
-                title = { Text(text = "ZenZone", modifier = Modifier.padding(start = 16.dp)) },
+                title = { Text(text = "Mindful mate", modifier = Modifier.padding(start = 16.dp)) },
 
                 )
         },
@@ -117,7 +118,7 @@ fun UiWindow(
                     onClick = { navController.navigate("screen2") },
                     icon = {
                         Icon(
-                            imageVector = Icons.AutoMirrored.Filled.DirectionsRun,
+                            imageVector = Icons.Default.SelfImprovement,
                             contentDescription = "Ask"
                         )
                     })
